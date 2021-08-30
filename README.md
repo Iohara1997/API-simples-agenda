@@ -1,24 +1,35 @@
-# README
+# API-Simples-Agenda
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uma API em Ruby on Rails com as principais rotas.
 
-Things you may want to cover:
+No diretório do arquivo, abrir terminal e digitar:
 
-* Ruby version
+`rails s`, será executado na porta http://localhost:3000/
 
-* System dependencies
+* [Get](localhost:3000/api/v1/contacts.json)
 
-* Configuration
+* [Get by ID](localhost:3000/api/v1/contacts/:id)
 
-* Database creation
+* [Post](localhost:3000/api/v1/contacts/:id)
 
-* Database initialization
+* [Put](localhost:3000/api/v1/contacts/:id)
 
-* How to run the test suite
+* [Delete](localhost:3000/api/v1/contacts/:id)
 
-* Services (job queues, cache servers, search engines, etc.)
+## Body
 
-* Deployment instructions
+![Print](https://imgur.com/8ELshMi.png)
 
-* ...
+## Headers
+
+No diretório do arquivo, abrir terminal e digitar:
+
+`rails c`
+
+O console do rails será iniciado. Crie então seu usuário:
+
+`User.create(email: 'endereco@email.com', password: '123456'`
+
+O comando gerará usuário e token de acesso que devem ser utilizados nos Headers das requisições.
+
+![print](https://imgur.com/3YBgyrB.png)
